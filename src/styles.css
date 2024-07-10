@@ -1,10 +1,18 @@
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: #272044;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
-body {
-  font-family: "Plus Jakarta Sans";
-  background-color: #272044;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
@@ -51,7 +59,43 @@ header a {
   text-transform: uppercase;
   background: white;
 }
-@media (max-width: 900px) {
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/michael-fassbender.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
